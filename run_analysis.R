@@ -40,3 +40,4 @@ mergedData=merge(labels,combinedData, by.x="Id", by.y="Activity")
 mergedData <- mergedData[,2:69]
 
 tidy=aggregate(mergedData[,4:69], list(mergedData$Subject,mergedData$Activity), mean)
+write.table(tidy, "output.txt", row.name=FALSE)
