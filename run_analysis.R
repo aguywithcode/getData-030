@@ -37,3 +37,6 @@ con<-unz("Archive.zip", "activity_labels.txt")
 labels<-read.table(con)
 colnames(labels)<-c("Id","Activity")
 mergedData=merge(labels,combinedData, by.x="Id", by.y="Activity")
+mergedData <- mergedData[,2:69]
+
+tidy=aggregate(mergedData[,4:69], list(mergedData$Subject,mergedData$Activity), mean)
