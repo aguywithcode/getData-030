@@ -28,7 +28,7 @@ Download the archive and place it in Archive.zip with the run_analysis.R file.
 Here are the general variables within the output file
 The data provides, the mean and standard deviation of the variables as well as in some cases, the axis on which the variable (X,Y,Z) is measured. They are grouped by subject number (Group.1), and activity (Group.2)
 
-| Variable Name | Axis dependent? | Description|
+| Variable Name | Axis dependent? | 
 | ------	| -----	|
 | tbodyAcc	| yes| 
 | tGravityAcc	| yes|
